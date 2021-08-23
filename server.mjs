@@ -17,6 +17,6 @@ app.get(`/animepfp`, (req, res) => {
     res.send(animepfp[randomIndex]);
 })
 
-app.listen(8000, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Server is running on http://localhost:8000`)
 })
